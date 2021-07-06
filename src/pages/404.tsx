@@ -1,52 +1,60 @@
 import * as React from "react";
-import { Link } from "gatsby";
+import Layout from "../components/Layout";
+import robwalker from "../images/robwalker.png";
 
 // styles
 const pageStyles = {
-  color: "#232129",
-  padding: "96px",
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-};
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
+  position: "relative",
+  top: "50%",
+  transform: "translateY(-50%)",
+  margin: "auto",
+  textAlign: "center",
 };
 
-const paragraphStyles = {
-  marginBottom: 48,
+const imageStyle = {
+  borderRadius: "50%",
+  border: "2px solid #fff",
+  height: "82px",
+  width: "82px",
 };
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
+
+const title = {
+  fontSize: "52px",
+};
+
+const subTitle = {
+  fontSize: "26px",
+  padding: "0 25%",
+};
+
+const link = {
+  textDecoration: "none",
+  color: "#fff",
+  lineHeight: "30px",
+  display: "block",
 };
 
 // markup
 const NotFoundPage = () => (
-  <main style={pageStyles}>
-    <title>Not found</title>
-    <h1 style={headingStyles}>Page not found</h1>
-    <p style={paragraphStyles}>
-      Sorry{" "}
-      <span role="img" aria-label="Pensive emoji">
-        😔
-      </span>{" "}
-      we couldn’t find what you were looking for.
-      <br />
-      {process.env.NODE_ENV === "development" ? (
-        <>
-          <br />
-          Try creating a page in <code style={codeStyles}>src/pages/</code>.
-          <br />
-        </>
-      ) : null}
-      <br />
-      <Link to="/">Go home</Link>.
-    </p>
-  </main>
+  <Layout>
+    <main style={pageStyles}>
+      <header>
+        <img style={imageStyle} src={robwalker} alt="Rob Walker" />
+      </header>
+
+      <article>
+        <h1 style={title}>Rob Walker</h1>
+
+        <p style={subTitle}>This page does not exist (yet?)</p>
+
+        <p>
+          <a style={link} href="/">
+            {`<- Home`}
+          </a>
+        </p>
+      </article>
+    </main>
+  </Layout>
 );
 
 export default NotFoundPage;

@@ -3,8 +3,9 @@ body {
   height: 100%;
   margin: 0;
   background: #2c6aa7;
-  font-family: "Montserrat Alternates", sans-serif, serif;
+  font-family: "Roboto", sans-serif, serif;
   color: #fff;
+  font-size: 18px;
 }
 
 #___gatsby,

@@ -11,19 +11,11 @@ import robwalker from "../images/robwalker.png";
 
 // styles
 const pageStyles = {
-  // padding: 96,
   position: "relative",
   top: "50%",
   transform: "translateY(-50%)",
   margin: "auto",
   textAlign: "center",
-};
-
-const linkStyle = {
-  color: "#8954A8",
-  fontWeight: 600,
-  fontSize: 16,
-  verticalAlign: "5%",
 };
 
 const imageStyle = {
@@ -34,7 +26,12 @@ const imageStyle = {
 };
 
 const title = {
-  fontSize: "30px",
+  fontSize: "52px",
+};
+
+const subTitle = {
+  fontSize: "26px",
+  padding: "0 25%",
 };
 
 const link = {
@@ -66,25 +63,39 @@ const IndexPage = () => {
 
         <article>
           <h1 style={title}>Rob Walker</h1>
-          <a style={link} href={`mailto:${email}`}>
-            <FontAwesomeIcon style={icon} icon={faEnvelope} />
-            {email}
-          </a>
 
-          <a style={link} href="https://twitter.com/robwalkerco">
-            <FontAwesomeIcon style={icon} icon={faTwitterSquare} />
-            @robwalkerco
-          </a>
+          <p style={subTitle}>
+            Software Engineer | Specialising in React Native, BLE, NFC |
+            Software/AWS consultant | Papertrail.io co-founder
+          </p>
 
-          <a style={link} href="https://github.com/robwalkerco">
-            <FontAwesomeIcon style={icon} icon={faGithubSquare} />
-            github.com/robwalkerco
-          </a>
+          <p>
+            <a style={link} href={`mailto:${email}`}>
+              <FontAwesomeIcon style={icon} icon={faEnvelope} />
+              {email}
+            </a>
+          </p>
 
-          <a style={link} href="https://www.linkedin.com/in/robwalkerco/">
-            <FontAwesomeIcon style={icon} icon={faLinkedin} />
-            linkedin.com/in/robertwalkerco
-          </a>
+          <p>
+            <a style={link} href="https://twitter.com/robwalkerco">
+              <FontAwesomeIcon style={icon} icon={faTwitterSquare} />
+              @robwalkerco
+            </a>
+          </p>
+
+          <p>
+            <a style={link} href="https://github.com/robwalkerco">
+              <FontAwesomeIcon style={icon} icon={faGithubSquare} />
+              github.com/robwalkerco
+            </a>
+          </p>
+
+          <p>
+            <a style={link} href="https://www.linkedin.com/in/robwalkerco/">
+              <FontAwesomeIcon style={icon} icon={faLinkedin} />
+              linkedin.com/in/robertwalkerco
+            </a>
+          </p>
         </article>
       </main>
     </Layout>
