@@ -1,2 +1,4 @@
-
-project.sublime-workspace
+node_modules/
+.cache/
+public
+.DS_Store

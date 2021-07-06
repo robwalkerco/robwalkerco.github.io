@@ -1,0 +1,13 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background: #2c6aa7;
+  font-family: "Montserrat Alternates", sans-serif, serif;
+  color: #fff;
+}
+
+#___gatsby,
+#gatsby-focus-wrapper {
+  height: 100%;
+}
