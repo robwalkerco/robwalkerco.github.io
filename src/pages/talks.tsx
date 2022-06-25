@@ -43,7 +43,7 @@ const IndexPage = () => {
 
           <p>
             <a
-              href="/static/Visual-Regression-Testing--Why-bother.pdf"
+              href="/Visual-Regression-Testing--Why-bother.pdf"
               target="_blank"
             >
               <FontAwesomeIcon icon={faFilePdf} />
