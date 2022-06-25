@@ -4,46 +4,13 @@ import {
   faGithubSquare,
   faTwitterSquare,
 } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import {
+  faEnvelope,
+  faMicrophoneLines,
+} from "@fortawesome/free-solid-svg-icons";
 import * as React from "react";
 import Layout from "../components/Layout";
-import robwalker from "../images/robwalker.png";
-
-// styles
-const pageStyles = {
-  position: "relative",
-  top: "50%",
-  transform: "translateY(-50%)",
-  margin: "auto",
-  textAlign: "center",
-};
-
-const imageStyle = {
-  borderRadius: "50%",
-  border: "2px solid #fff",
-  height: "82px",
-  width: "82px",
-};
-
-const title = {
-  fontSize: "52px",
-};
-
-const subTitle = {
-  fontSize: "26px",
-  padding: "0 25%",
-};
-
-const link = {
-  textDecoration: "none",
-  color: "#fff",
-  lineHeight: "30px",
-  display: "block",
-};
-
-const icon = {
-  marginRight: "10px",
-};
+import robwalker from "../images/robwalker.jpg";
 
 // markup
 const IndexPage = () => {
@@ -56,43 +23,55 @@ const IndexPage = () => {
 
   return (
     <Layout>
-      <main style={pageStyles}>
+      <main>
         <header>
-          <img style={imageStyle} src={robwalker} alt="Rob Walker" />
+          <a href="/">
+            <img id="face" src={robwalker} alt="Rob Walker" />
+          </a>
         </header>
 
         <article>
-          <h1 style={title}>Rob Walker</h1>
+          <h1>Rob Walker</h1>
 
-          <p style={subTitle}>
-            Software Engineer | Specialising in React Native, BLE, NFC |
-            Software/AWS consultant | Papertrail.io co-founder
+          <h2>
+            Senior Software Engineer | Specialising in React (Native) | Working
+            at{" "}
+            <a href="https://formidable.com" target="_blank">
+              Formidable
+            </a>
+          </h2>
+
+          <p>
+            <a href="/talks">
+              <FontAwesomeIcon icon={faMicrophoneLines} />
+              Past talks -&gt;
+            </a>
           </p>
 
           <p>
-            <a style={link} href={`mailto:${email}`}>
-              <FontAwesomeIcon style={icon} icon={faEnvelope} />
+            <a href={`mailto:${email}`}>
+              <FontAwesomeIcon icon={faEnvelope} />
               {email}
             </a>
           </p>
 
           <p>
-            <a style={link} href="https://twitter.com/robwalkerco">
-              <FontAwesomeIcon style={icon} icon={faTwitterSquare} />
+            <a href="https://twitter.com/robwalkerco">
+              <FontAwesomeIcon icon={faTwitterSquare} />
               @robwalkerco
             </a>
           </p>
 
           <p>
-            <a style={link} href="https://github.com/robwalkerco">
-              <FontAwesomeIcon style={icon} icon={faGithubSquare} />
+            <a href="https://github.com/robwalkerco">
+              <FontAwesomeIcon icon={faGithubSquare} />
               github.com/robwalkerco
             </a>
           </p>
 
           <p>
-            <a style={link} href="https://www.linkedin.com/in/robwalkerco/">
-              <FontAwesomeIcon style={icon} icon={faLinkedin} />
+            <a href="https://www.linkedin.com/in/robwalkerco/">
+              <FontAwesomeIcon icon={faLinkedin} />
               linkedin.com/in/robertwalkerco
             </a>
           </p>
