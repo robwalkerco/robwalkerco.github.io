@@ -34,8 +34,8 @@ const IndexPage = () => {
           <h1>Rob Walker</h1>
 
           <h2>
-            Senior Software Engineer | Specialising in React (Native) | Working
-            at{" "}
+            Software Engineering Manager | Specialising in React Native |
+            Working at{" "}
             <a href="https://formidable.com" target="_blank">
               Formidable
             </a>

@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFilePdf, faPlay } from "@fortawesome/free-solid-svg-icons";
+import { faFilePdf, faPlay, faVideo } from "@fortawesome/free-solid-svg-icons";
 import * as React from "react";
 import Layout from "../components/Layout";
 import robwalker from "../images/robwalker.jpg";
@@ -22,14 +22,54 @@ const IndexPage = () => {
           </a>
         </header>
 
-        <article>
-          <h1>Past talks</h1>
+        <h1>Past talks</h1>
 
+        <article>
           <h2>
-            24th June 2022 - <a href="https://reactnorway.com/">React Norway</a>
+            2nd&nbsp;September&nbsp;2022&nbsp;-{" "}
+            <a href="https://www.react-native.eu/">React&nbsp;Native&nbsp;EU</a>
           </h2>
 
-          <p>Title: Visual Regression Testing: Why Bother?</p>
+          <h3>Visual Regression Testing in React Native</h3>
+
+          <p>
+            <a
+              href="https://www.youtube.com/watch?v=cRbreZz8LHk"
+              target="_blank"
+            >
+              <FontAwesomeIcon icon={faVideo} />
+              YouTube
+            </a>
+          </p>
+
+          <p>
+            <a
+              href="pitch.com/public/6288cd96-266b-4aaa-8e76-7efe4a975e3a"
+              target="_blank"
+            >
+              <FontAwesomeIcon icon={faPlay} />
+              Slides
+            </a>
+          </p>
+
+          <p>
+            <a
+              href="/Visual-Regression-Testing-in-React-Native.pdf"
+              target="_blank"
+            >
+              <FontAwesomeIcon icon={faFilePdf} />
+              Slides (PDF)
+            </a>
+          </p>
+        </article>
+
+        <article>
+          <h2>
+            24th&nbsp;June&nbsp;2022&nbsp;-{" "}
+            <a href="https://reactnorway.com/">React&nbsp;Norway</a>
+          </h2>
+
+          <h3>Visual Regression Testing: Why Bother?</h3>
 
           <p>
             <a
