@@ -1,5 +1,10 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFilePdf, faPlay, faVideo } from "@fortawesome/free-solid-svg-icons";
+import {
+  faFilePdf,
+  faPlay,
+  faVideo,
+  faLink,
+} from "@fortawesome/free-solid-svg-icons";
 import * as React from "react";
 import Layout from "../components/Layout";
 import robwalker from "../images/robwalker.jpg";
@@ -23,6 +28,94 @@ const IndexPage = () => {
         </header>
 
         <h1>Past talks</h1>
+        <article>
+          <h2>
+            19th&nbsp;May&nbsp;2023&nbsp;-{" "}
+            <a href="https://chainreactconf.com/">Chain&nbsp;React</a>
+          </h2>
+
+          <h3>0 to 1 (Million Downloads); PUMAs Mobile Success Story</h3>
+
+          {/* <p>
+            <a
+              href="https://www.youtube.com/watch?v=cRbreZz8LHk"
+              target="_blank"
+            >
+              <FontAwesomeIcon icon={faVideo} />
+              YouTube
+            </a>
+          </p> */}
+
+          <p>
+            <a href="/0-to-1-PUMAs-Mobile-Success-Story.pdf" target="_blank">
+              <FontAwesomeIcon icon={faFilePdf} />
+              Slides (PDF)
+            </a>
+          </p>
+
+          <h2>Links</h2>
+          <p>
+            <a
+              href="https://formidable.com/blog/2022/mobile-app-rollout/"
+              target="_blank"
+            >
+              <FontAwesomeIcon icon={faLink} />
+              Formidable: Mobile App Rollout Blog Post
+            </a>
+          </p>
+          <p>
+            <a href="https://www.ada.gov/topics/intro-to-ada" target="_blank">
+              <FontAwesomeIcon icon={faLink} />
+              ADA: Intro to ADA
+            </a>
+          </p>
+          <p>
+            <a
+              href="https://www.iweb.co.uk/2016/10/inclusive-design-why-our-websites-should-more-accessible"
+              target="_blank"
+            >
+              <FontAwesomeIcon icon={faLink} />
+              iWeb: Including Web Design Blog Post
+            </a>
+          </p>
+          <p>
+            <a
+              href="https://formidable.com/blog/2023/ios-voiceover-guide-for-developers/"
+              target="_blank"
+            >
+              <FontAwesomeIcon icon={faLink} />
+              Formidable: iOS VoiceOver Guide For Developers Blog Post
+            </a>
+          </p>
+          <p>
+            <a
+              href="https://www.youtube.com/watch?v=qDm7GiKra28"
+              target="_blank"
+            >
+              <FontAwesomeIcon icon={faLink} />
+              YouTube: How to navigate your iPhone or iPad with VoiceOver
+            </a>
+          </p>
+          <p>
+            <a
+              href="https://formidable.com/open-source/react-native-ama/"
+              target="_blank"
+            >
+              <FontAwesomeIcon icon={faLink} />
+              GitHub: React Native AMA
+            </a>
+          </p>
+          <p>
+            <a
+              href="https://www.statista.com/statistics/262157"
+              target="_blank"
+            >
+              <FontAwesomeIcon icon={faLink} />
+              Statista: Market share of mobile operating systems in India from
+              2012 to 2022
+            </a>
+          </p>
+        </article>
 
         <article>
           <h2>
