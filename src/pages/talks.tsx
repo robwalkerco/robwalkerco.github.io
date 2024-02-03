@@ -36,15 +36,15 @@ const IndexPage = () => {
 
           <h3>0 to 1 (Million Downloads); PUMAs Mobile Success Story</h3>
 
-          {/* <p>
+          <p>
             <a
-              href="https://www.youtube.com/watch?v=cRbreZz8LHk"
+              href="https://www.youtube.com/watch?v=teuZZTsl_F8"
               target="_blank"
             >
               <FontAwesomeIcon icon={faVideo} />
               YouTube
             </a>
-          </p> */}
+          </p>
 
           <p>
             <a href="/0-to-1-PUMAs-Mobile-Success-Story.pdf" target="_blank">
