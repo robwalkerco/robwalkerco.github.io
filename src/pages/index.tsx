@@ -36,8 +36,8 @@ const IndexPage = () => {
           <h2>
             Software Engineering Manager | Specialising in React Native |
             Working at{" "}
-            <a href="https://formidable.com" target="_blank">
-              Formidable
+            <a href="https://www.nearform.com" target="_blank">
+              Nearform
             </a>
           </h2>
 
